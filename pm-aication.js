@@ -84,7 +84,7 @@
       tools: ["Cursor", "Claude"],
       wins: ["Chrome extension + dashboard + Jira integration built in one day", "Agent team approach (Cursor + Claude)"],
       writeup_url: null,
-      demo_url: null,
+      demo_url: "https://screen.studio/share/g4w2BmXZ",
     },
     {
       id: 7, name: "AI-Optimized PM Workflows", author: "Josh Ackerman",
@@ -183,7 +183,7 @@
       tools: ["Protodash", "Agent Builder (FinLLM)"],
       wins: ["Agent Builder easier to use than expected", "Protodash auto-implements in Stripe design style", "Dedicated AI-cation day reduced barrier to tool adoption"],
       writeup_url: null,
-      demo_url: null,
+      demo_url: "https://admin.corp.stripe.com/finllm/dynamic?name=Refund%20Friction%20Analyst&version=0.04",
     },
     {
       id: 18, name: "3DS Product Suite", author: "Cip Blujdea",
@@ -192,7 +192,7 @@
       tools: ["Hubble", "Claude Code", "Agent Builder (FinLLM)"],
       wins: ["FinLLM agent auto-generates RFPs about 3D Secure", "Built a GTM dashboard for real-time product metrics", "Improved personal Claude Code PM brain system"],
       writeup_url: null,
-      demo_url: null,
+      demo_url: "https://admin.corp.stripe.com/finllm/agent/Standalone%203DS%20expert",
     },
     {
       id: 19, name: "AI-cation Multi-Project", author: "Daniel Loke",
