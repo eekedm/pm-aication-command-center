@@ -38,7 +38,7 @@
       summary: "Built a Claude Code skill that SSHs into agent devbox and writes a weekly 515 from the agents\u2019 perspective, including feedback to the human operator. 34 sessions, 9 new skills shipped in one week.",
       tools: ["Claude Code", "Claude Code Skills", "Figma MCP", "Google Docs MCP", "Slack MCP"],
       wins: ["9 skills shipped in Innovation Day sprint", "Plan-then-implement pattern had near-100% completion rate", "Agent fleet model with 34 parallel sessions"],
-      writeup_url: null,
+      writeup_url: "https://groups.google.com/a/stripe.com/g/pm-aication-notes/search/from%3Apreswick%40stripe.com",
       demo_url: null,
     },
     {
@@ -47,7 +47,7 @@
       summary: "Used Claude Code with a Privy wallet funded via Stripe onramp to order and pay for coffee through a food ordering AI agent using stablecoins over machine payments (x402).",
       tools: ["Claude Code", "Privy wallet", "Stripe Onramp", "Machine Payments (x402)"],
       wins: ["End-to-end agent-to-agent commerce flow actually worked", "Stablecoin funding via onramp was fast", "Real-world purchase completed autonomously"],
-      writeup_url: null,
+      writeup_url: "https://groups.google.com/a/stripe.com/g/pm-aication-notes/search/from%3Ajenlee%40stripe.com%20coffee",
       demo_url: null,
     },
     {
@@ -56,7 +56,7 @@
       summary: "Built a Claude Code skill that parses feedback from friction log docs and Slack threads, extracts pain points, and populates a Google Sheet tracker for prioritizing Managed Payments improvements.",
       tools: ["Claude Code", "Claude Code Skills", "Google Sheets MCP", "Slack MCP"],
       wins: ["Parallel iteration with two Claude Code windows", "Reusable skill for ongoing use", "Converted plan to Google Doc for persistence"],
-      writeup_url: null,
+      writeup_url: "https://groups.google.com/a/stripe.com/g/pm-aication-notes/search/from%3Aalexandras%40stripe.com",
       demo_url: null,
     },
     {
@@ -65,7 +65,7 @@
       summary: "Built a full SaaS app for sharing SOC2 reports via URL at $0.50/download, including marketing site, multi-tenant signup with Stripe UBB, magic link access, NDA gating, and admin dashboard.",
       tools: ["Claude Code"],
       wins: ["Full SaaS built in 2\u20133 hours", "Casual input worked \u2014 Claude discerned intent reliably", "Hot-reloading was sweet"],
-      writeup_url: null,
+      writeup_url: "https://groups.google.com/a/stripe.com/g/pm-aication-notes/search/from%3Astokeley%40stripe.com",
       demo_url: null,
     },
     {
@@ -74,7 +74,7 @@
       summary: "Used Claude to parse Morpho\u2019s fee wrapper smart contract to understand party rights in the vault, preparing for a meeting to discuss Privy\u2019s Morpho lending protocol integration.",
       tools: ["Claude"],
       wins: ["Quickly understood complex smart contract code", "Better prepared for technical meeting"],
-      writeup_url: null,
+      writeup_url: "https://groups.google.com/a/stripe.com/g/pm-aication-notes/search/from%3Ameghna%40stripe.com",
       demo_url: null,
     },
     {
@@ -83,7 +83,7 @@
       summary: "Built a structured bug bash tool replacing Google Doc workflow: Chrome extension for real-time capture, AI-powered triage dashboard, and one-click Jira export.",
       tools: ["Cursor", "Claude"],
       wins: ["Chrome extension + dashboard + Jira integration built in one day", "Agent team approach (Cursor + Claude)"],
-      writeup_url: null,
+      writeup_url: "https://groups.google.com/a/stripe.com/g/pm-aication-notes/search/from%3Anarek%40stripe.com",
       demo_url: "https://screen.studio/share/g4w2BmXZ",
     },
     {
@@ -92,7 +92,7 @@
       summary: "Multiple AI workflow optimizations: Claude Code for Hubble queries (5\u201310 agents in parallel), go/chat for answering PSO questions, meeting note summaries, SOKR updates, NotebookLM for user feedback.",
       tools: ["Claude Code", "go/chat", "NotebookLM", "KCM Review Agent", "Hubble MCP"],
       wins: ["5\u201310 parallel Claude Code agents for queries", "Text expander + go/chat for meeting summaries", "NotebookLM for user feedback synthesis"],
-      writeup_url: null,
+      writeup_url: "https://groups.google.com/a/stripe.com/g/pm-aication-notes/search/from%3Ajackerman%40stripe.com",
       demo_url: null,
     },
     {
@@ -101,7 +101,7 @@
       summary: "Built three sales tools: an agent developing pitch/pricing/ROI for Connect platforms, an alert agent that Slacks when platforms have risky accounts, and a fraud attack dashboard from support tickets.",
       tools: ["Claude Code", "Slack MCP"],
       wins: ["Three distinct tools built in one day", "Direct sales pipeline applications"],
-      writeup_url: null,
+      writeup_url: "https://groups.google.com/a/stripe.com/g/pm-aication-notes/search/from%3Aalisa%40stripe.com",
       demo_url: null,
     },
     {
@@ -110,7 +110,7 @@
       summary: "Built a web-based POS accepting in-person payments with Stripe Terminal (including unreleased Reader T600) in ~90 minutes using Replit and Claude Code.",
       tools: ["Replit", "Claude Code", "Stripe Terminal", "Gemini"],
       wins: ["Built in ~90 minutes", "Claimable sandboxes for seamless Replit integration", "Demonstrates empathy with user jobs-to-be-done"],
-      writeup_url: null,
+      writeup_url: "https://groups.google.com/a/stripe.com/g/pm-aication-notes/search/from%3Akateb%40stripe.com",
       demo_url: null,
     },
     {
@@ -119,7 +119,7 @@
       summary: "Built a personal analytics tool that scans Slack DMs and Google Calendar to surface relationship health insights with a Soura Score (0\u2013100), per-conversation breakdowns, anomaly flags, and PM mode.",
       tools: ["Claude Code", "Slack API", "Google Calendar API"],
       wins: ["Iterative sculpting workflow felt natural", "Background processing solved rate limiting", "Metrics-first, privacy-minded design"],
-      writeup_url: null,
+      writeup_url: "https://groups.google.com/a/stripe.com/g/pm-aication-notes/search/from%3Ajenlee%40stripe.com%20soura",
       demo_url: null,
     },
     {
@@ -128,7 +128,7 @@
       summary: "Modified production code to detect suspicious VAT ID patterns (repetitions, sequences, repeating patterns) on checkout before hitting verification APIs. 17 passing tests.",
       tools: ["Claude Code"],
       wins: ["Asking \u2018why\u2019 questions saved days of work", "Simple frontend approach beat complex devbox orchestration", "300 lines of TypeScript with 17 tests"],
-      writeup_url: null,
+      writeup_url: "https://groups.google.com/a/stripe.com/g/pm-aication-notes/search/from%3Arutvij%40stripe.com",
       demo_url: null,
     },
     {
@@ -137,7 +137,7 @@
       summary: "Built a web app helping merchants determine VAT/GST registration obligations via questionnaire. Covers EU, UK, Australia with 48 jurisdiction-specific rules.",
       tools: ["Claude Code"],
       wins: ["Thorough planning (4h) made build phase fast (2h)", "Tax specialist domain expertise ensured accurate rules", "Simple tech stack (Flask, TSV flat file for rules)"],
-      writeup_url: null,
+      writeup_url: "https://groups.google.com/a/stripe.com/g/pm-aication-notes/search/from%3Aaleksandrabal%40stripe.com",
       demo_url: null,
     },
     {
@@ -146,7 +146,7 @@
       summary: "Multi-week production project: removed 4 of 5 redundant RISA compliance questions from Japanese merchant onboarding. 8 PRs across backend, frontend, partner pipelines, and synthetics.",
       tools: ["Claude (Cursor)", "Claude Code"],
       wins: ["Speed on mechanical work \u2014 hours reduced to minutes", "Human review caught a real pre-existing stale data bug", "Iterative collaboration \u2014 Claude adapted when pushed back"],
-      writeup_url: null,
+      writeup_url: "https://groups.google.com/a/stripe.com/g/pm-aication-notes/search/from%3Adaniel%40stripe.com%20RISA",
       demo_url: null,
     },
     {
@@ -155,7 +155,7 @@
       summary: "Built an LLM-powered RSS feed monitoring Japanese X posts about Stripe, filtering spam via GPT-4o-mini on val.town, posting to Slack. $0/month to operate.",
       tools: ["Claude Code", "val.town", "RSS.app", "GPT-4o-mini", "Superwhisper"],
       wins: ["Rapid exploration of 3 solution spaces in one day", "Discovery through AI \u2014 found val.town built-in OpenAI access", "$0/month on free tiers"],
-      writeup_url: null,
+      writeup_url: "https://groups.google.com/a/stripe.com/g/pm-aication-notes/search/from%3Adaniel%40stripe.com%20Japan%20X",
       demo_url: null,
     },
     {
@@ -164,7 +164,7 @@
       summary: "Built a live e-commerce bookstore (shelfhelpbooks.shop) using only AI tools to dogfood Stripe\u2019s Local Payment Methods, Dynamic Payment Methods, and Checkout optimization. Full storefront assembled in 35 minutes.",
       tools: ["Lovable", "ChatGPT", "Stripe Checkout", "Dynamic Payment Methods"],
       wins: ["Fully functional live storefront in under 35 minutes", "Tested Dynamic Payment Methods including Affirm threshold logic", "Exposed real UX pain point: Stripe approval took longer than the entire build"],
-      writeup_url: null,
+      writeup_url: "https://groups.google.com/a/stripe.com/g/pm-aication-notes/search/from%3Agpelissier%40stripe.com",
       demo_url: "https://shelfhelpbooks.shop",
     },
     {
@@ -173,7 +173,7 @@
       summary: "Rapidly prototyped a new dynamic, user-intent-aware Terminal Dashboard Onboarding flow using Protodash, replacing the current static setup with one that adapts based on integration path.",
       tools: ["Protodash", "Claude Code"],
       wins: ["Full interactive onboarding prototype in under a day", "Protodash enforced Sail design language automatically", "Used Claude Code to locate Fox component source code for pixel-perfect recreation"],
-      writeup_url: null,
+      writeup_url: "https://groups.google.com/a/stripe.com/g/pm-aication-notes/search/from%3Adeniseyoung%40stripe.com",
       demo_url: null,
     },
     {
@@ -182,7 +182,7 @@
       summary: "Built two tools: a Protodash prototype surfacing L2/L3 missing/poor data quality in the Stripe dashboard, and an agent that tracks refund-related Slack DMs and builds a priority backlog from Jiras.",
       tools: ["Protodash", "Agent Builder (FinLLM)"],
       wins: ["Agent Builder easier to use than expected", "Protodash auto-implements in Stripe design style", "Dedicated AI-cation day reduced barrier to tool adoption"],
-      writeup_url: null,
+      writeup_url: "https://groups.google.com/a/stripe.com/g/pm-aication-notes/search/from%3Avighnesh%40stripe.com",
       demo_url: "https://admin.corp.stripe.com/finllm/dynamic?name=Refund%20Friction%20Analyst&version=0.04",
     },
     {
@@ -191,7 +191,7 @@
       summary: "Built three things in one day: a GTM dashboard in Hubble for Authentication metrics, an improved Claude Code \u201CPM brain extension,\u201D and a FinLLM agent that answers 3D Secure questions and writes RFPs.",
       tools: ["Hubble", "Claude Code", "Agent Builder (FinLLM)"],
       wins: ["FinLLM agent auto-generates RFPs about 3D Secure", "Built a GTM dashboard for real-time product metrics", "Improved personal Claude Code PM brain system"],
-      writeup_url: null,
+      writeup_url: "https://groups.google.com/a/stripe.com/g/pm-aication-notes/search/from%3Acip%40stripe.com",
       demo_url: "https://admin.corp.stripe.com/finllm/agent/Standalone%203DS%20expert",
     },
     {
@@ -200,7 +200,7 @@
       summary: "Built five experiments: an automated stand-up rotator, a \u201CBYO-LLM Stripe Data Assistant\u201D that lets merchants chat with their data (bypassing Sigma), a Lovable storefront with ACP, and Figma-to-code prototypes.",
       tools: ["Claude Code", "Lovable", "Stripe ACP", "Anthropic API", "Figma MCP", "Stripe Pages"],
       wins: ["Built a Stripe Data Assistant that poses a real question for Sigma", "Lovable one-shot the Stripe ACP integration from a single prompt", "Identified strategic insight: ACP growth is merchant-constrained"],
-      writeup_url: null,
+      writeup_url: "https://groups.google.com/a/stripe.com/g/pm-aication-notes/search/from%3Adanielloke%40stripe.com",
       demo_url: null,
     },
     {
@@ -227,7 +227,7 @@
       summary: "Built a live fullstack demo of org-level Blueprints in Workbench for the Customer and Payment Method Sharing GA, including a new getting-started flow directing users to test sharing in a sandbox org.",
       tools: ["Claude Code"],
       wins: ["Live fullstack demo deployed end-to-end", "New getting-started flow for sandbox orgs", "Tooling enabled tackling a bigger project than expected"],
-      writeup_url: null,
+      writeup_url: "https://groups.google.com/a/stripe.com/g/pm-aication-notes/search/from%3Adwood%40stripe.com",
       demo_url: null,
     },
     {
@@ -400,7 +400,7 @@
             '<div class="project-meta">' +
               '<span class="category-badge ' + esc(p.category) + '">' + esc(p.category.replace(/-/g, " ")) + "</span>" +
             "</div>" +
-            '<div class="project-name">' + esc(p.name) + "</div>" +
+            '<div class="project-name">' + (p.writeup_url ? '<a href="' + esc(p.writeup_url) + '" target="_blank" rel="noopener">' + esc(p.name) + '</a>' : esc(p.name)) + "</div>" +
             '<div class="project-author">' + esc(p.author) + "</div>" +
             '<div class="project-summary">' + esc(p.summary) + "</div>" +
             '<div class="project-tools">' + toolsHtml + "</div>" +
