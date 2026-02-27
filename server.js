@@ -51,6 +51,13 @@ const projects = [
   { id: 35, name: "AI Documentation & Feature Flags", author: "Kelly Moriarty" },
   { id: 36, name: "Vault & Forward Wallet Docs", author: "Maria Yang" },
   { id: 37, name: "EU Crypto Onramp PRD", author: "Patrick Kelly" },
+  { id: 38, name: "Bank Debits Walking the Store", author: "Brendan Meehan" },
+  { id: 39, name: "LPM Documentation at Scale", author: "Julius Danek" },
+  { id: 40, name: "Canvas and Soul Art Auction", author: "Akhil Sadarangani" },
+  { id: 41, name: "Pipeline Studio Product Analysis", author: "Skye Bacus" },
+  { id: 42, name: "Enterprise User Needs Prioritization", author: "Mayur Dewaikar" },
+  { id: 43, name: "Fintech GTM Plan Generator", author: "Nick Krakoff" },
+  { id: 44, name: "Dante Managed Payments Docs Review", author: "Ahmed Gharib" },
 ];
 
 // --- Create Checkout Session ---
