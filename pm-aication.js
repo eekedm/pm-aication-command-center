@@ -407,7 +407,7 @@
             '<div class="project-wins"><h4>What worked</h4><ul>' + winsHtml + "</ul></div>" +
             linksHtml +
             '<button class="vote-btn" data-vote="' + p.id + '">' +
-              "Vote for this project $1" +
+              "Vote $1" +
             "</button>" +
           "</div>" +
         "</div>";
@@ -494,14 +494,14 @@
         window.location.href = data.url;
       } else {
         window.alert("Error: " + (data.error || "Could not create checkout session"));
-        btn.textContent = "Vote for this project $1";
+        btn.textContent = "Vote $1";
         btn.style.opacity = "1";
         btn.style.pointerEvents = "auto";
       }
     })
     .catch(function (err) {
       window.alert("Network error. Please try again.");
-      btn.textContent = "Vote for this project $1";
+      btn.textContent = "Vote $1";
       btn.style.opacity = "1";
       btn.style.pointerEvents = "auto";
     });
