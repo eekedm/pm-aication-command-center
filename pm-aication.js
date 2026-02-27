@@ -444,7 +444,9 @@
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
-  // --- Render quotes ---
+  // --- Render quotes with auto-scroll ---
+  var quoteAutoScroll = null;
+
   function renderQuotes() {
     var grid = document.getElementById("quotes-grid");
     var html = "";
@@ -457,6 +459,32 @@
         "</div>";
     }
     grid.innerHTML = html;
+    startQuoteAutoScroll();
+  }
+
+  function startQuoteAutoScroll() {
+    var track = document.getElementById("quotes-grid");
+    if (!track) return;
+    if (quoteAutoScroll) clearInterval(quoteAutoScroll);
+
+    quoteAutoScroll = setInterval(function () {
+      var card = track.querySelector(".quote-card");
+      if (!card) return;
+      var step = card.offsetWidth + 16; // card width + gap
+      var maxScroll = track.scrollWidth - track.clientWidth;
+      if (track.scrollLeft >= maxScroll - 2) {
+        track.scrollLeft = 0;
+      } else {
+        track.scrollLeft += step;
+      }
+    }, 4000);
+
+    track.addEventListener("mouseenter", function () {
+      if (quoteAutoScroll) clearInterval(quoteAutoScroll);
+    });
+    track.addEventListener("mouseleave", function () {
+      startQuoteAutoScroll();
+    });
   }
 
   // --- Filter tabs ---
