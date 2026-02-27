@@ -399,9 +399,9 @@
           '<div class="project-body">' +
             '<div class="project-meta">' +
               '<span class="category-badge ' + esc(p.category) + '">' + esc(p.category.replace(/-/g, " ")) + "</span>" +
-              '<span class="project-author">' + esc(p.author) + "</span>" +
             "</div>" +
             '<div class="project-name">' + esc(p.name) + "</div>" +
+            '<div class="project-author">' + esc(p.author) + "</div>" +
             '<div class="project-summary">' + esc(p.summary) + "</div>" +
             '<div class="project-tools">' + toolsHtml + "</div>" +
             '<div class="project-wins"><h4>What worked</h4><ul>' + winsHtml + "</ul></div>" +
