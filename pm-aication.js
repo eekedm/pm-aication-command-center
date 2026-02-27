@@ -340,37 +340,31 @@
     return div.innerHTML;
   }
 
-  // --- Carousel elements ---
-  var carouselGrid = document.getElementById("projects-grid");
-  var carouselPrev = document.getElementById("carousel-prev");
-  var carouselNext = document.getElementById("carousel-next");
-  var carouselCounter = document.getElementById("carousel-counter");
-
-  function getVisibleCount() {
-    if (!carouselGrid.firstElementChild) return 1;
-    var cardW = carouselGrid.firstElementChild.offsetWidth + 20;
-    return Math.max(1, Math.floor(carouselGrid.offsetWidth / cardW));
-  }
-
-  function updateCounter() {
-    var cards = carouselGrid.children;
-    if (!cards.length) { carouselCounter.textContent = ""; return; }
-    var cardW = cards[0].offsetWidth + 20;
-    var scrollIdx = Math.round(carouselGrid.scrollLeft / cardW);
-    var visible = getVisibleCount();
-    var first = scrollIdx + 1;
-    var last = Math.min(scrollIdx + visible, cards.length);
-    carouselCounter.textContent = first + "\u2013" + last + " of " + cards.length;
-  }
+  // --- Pagination ---
+  var ITEMS_PER_PAGE = 24;
+  var currentPage = 1;
+  var currentFilter = "all";
 
   // --- Render projects ---
-  function renderProjects(filter) {
+  function getFilteredProjects(filter) {
+    return filter === "all" ? projects : projects.filter(function (p) { return p.category === filter; });
+  }
+
+  function renderProjects(filter, page) {
+    if (filter !== undefined) currentFilter = filter;
+    if (page !== undefined) currentPage = page;
+
     var grid = document.getElementById("projects-grid");
-    var filtered = filter === "all" ? projects : projects.filter(function (p) { return p.category === filter; });
+    var filtered = getFilteredProjects(currentFilter);
+    var totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+    if (currentPage > totalPages) currentPage = totalPages || 1;
+
+    var start = (currentPage - 1) * ITEMS_PER_PAGE;
+    var pageItems = filtered.slice(start, start + ITEMS_PER_PAGE);
 
     var html = "";
-    for (var i = 0; i < filtered.length; i++) {
-      var p = filtered[i];
+    for (var i = 0; i < pageItems.length; i++) {
+      var p = pageItems[i];
       var toolsHtml = "";
       for (var t = 0; t < p.tools.length; t++) {
         toolsHtml += '<span class="tool-tag">' + esc(p.tools[t]) + "</span>";
@@ -416,23 +410,36 @@
         "</div>";
     }
     grid.innerHTML = html;
-    // Reset scroll and update counter
-    grid.scrollLeft = 0;
-    updateCounter();
+    renderPagination(filtered.length, totalPages);
   }
 
-  // --- Carousel navigation ---
-  carouselPrev.addEventListener("click", function () {
-    var cardW = (carouselGrid.firstElementChild || {}).offsetWidth || 380;
-    carouselGrid.scrollBy({ left: -(cardW + 20) * getVisibleCount(), behavior: "smooth" });
-  });
+  function renderPagination(totalItems, totalPages) {
+    var pag = document.getElementById("pagination");
+    if (totalPages <= 1) { pag.innerHTML = ""; return; }
 
-  carouselNext.addEventListener("click", function () {
-    var cardW = (carouselGrid.firstElementChild || {}).offsetWidth || 380;
-    carouselGrid.scrollBy({ left: (cardW + 20) * getVisibleCount(), behavior: "smooth" });
-  });
+    var html = '<button class="page-btn" data-page="prev" ' + (currentPage <= 1 ? "disabled" : "") + '>&larr;</button>';
 
-  carouselGrid.addEventListener("scroll", updateCounter);
+    for (var i = 1; i <= totalPages; i++) {
+      html += '<button class="page-btn' + (i === currentPage ? " active" : "") + '" data-page="' + i + '">' + i + "</button>";
+    }
+
+    html += '<button class="page-btn" data-page="next" ' + (currentPage >= totalPages ? "disabled" : "") + '>&rarr;</button>';
+    html += '<span class="page-info">' + totalItems + " projects</span>";
+    pag.innerHTML = html;
+  }
+
+  // --- Pagination clicks ---
+  document.getElementById("pagination").addEventListener("click", function (e) {
+    var btn = e.target.closest(".page-btn");
+    if (!btn || btn.disabled) return;
+    var val = btn.getAttribute("data-page");
+    if (val === "prev") renderProjects(undefined, currentPage - 1);
+    else if (val === "next") renderProjects(undefined, currentPage + 1);
+    else renderProjects(undefined, parseInt(val, 10));
+    // Scroll to top of projects section
+    var el = document.getElementById("projects");
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
 
   // --- Render quotes ---
   function renderQuotes() {
@@ -456,7 +463,7 @@
     var tabs = document.querySelectorAll(".filter-tab");
     for (var i = 0; i < tabs.length; i++) tabs[i].classList.remove("active");
     tab.classList.add("active");
-    renderProjects(tab.getAttribute("data-filter"));
+    renderProjects(tab.getAttribute("data-filter"), 1);
   });
 
   // --- Vote button handler (Stripe Checkout) ---
@@ -517,7 +524,7 @@
   }
 
   // --- Init ---
-  renderProjects("all");
+  renderProjects("all", 1);
   renderQuotes();
   checkVoteSuccess();
 
