@@ -39,7 +39,7 @@
       tools: ["Claude Code", "Claude Code Skills", "Figma MCP", "Google Docs MCP", "Slack MCP"],
       wins: ["9 skills shipped in Innovation Day sprint", "Plan-then-implement pattern had near-100% completion rate", "Agent fleet model with 34 parallel sessions"],
       quote: "Every week @preswick asks us to do more, but this week the pattern shifted. Instead of one-off research, the dominant workstream was building tools that make future weeks faster.",
-      visual: { bg: "linear-gradient(135deg, #1a1040, #2d1b69)", title: "Fleet model", detail: "34 sessions", sub: "9 skills shipped in one sprint" },
+      visual: { bg: "linear-gradient(135deg, #1a1040, #2d1b69)", title: "Fleet model", detail: "One PM, 34 AI sessions", sub: "9 skills shipped in one sprint" },
     },
     {
       id: 2, name: "Machine Payments Coffee Order", author: "Jennifer Lee",
@@ -48,7 +48,7 @@
       tools: ["Claude Code", "Privy wallet", "Stripe Onramp", "Machine Payments (x402)"],
       wins: ["End-to-end agent-to-agent commerce flow actually worked", "Stablecoin funding via onramp was fast", "Real-world purchase completed autonomously"],
       quote: "I just bought myself coffee today using Claude Code!!",
-      visual: { bg: "linear-gradient(135deg, #1a3020, #0d4a2a)", title: "Agent commerce", detail: "Coffee via x402", sub: "Agent-to-agent stablecoin payment" },
+      visual: { bg: "linear-gradient(135deg, #1a3020, #0d4a2a)", title: "Agent commerce", detail: "AI bought real coffee", sub: "Agent-to-agent stablecoin payment" },
     },
     {
       id: 3, name: "Friction Point Aggregation Tool", author: "Alexandra Scolieri",
@@ -57,7 +57,7 @@
       tools: ["Claude Code", "Claude Code Skills", "Google Sheets MCP", "Slack MCP"],
       wins: ["Parallel iteration with two Claude Code windows", "Reusable skill for ongoing use", "Converted plan to Google Doc for persistence"],
       quote: "Getting access to the right tools was my biggest hurdle.",
-      visual: { bg: "linear-gradient(135deg, #1a1a40, #2b1560)", title: "Feedback synthesis", detail: "Slack + Docs", sub: "Auto-extracts pain points to sheets" },
+      visual: { bg: "linear-gradient(135deg, #1a1a40, #2b1560)", title: "Feedback synthesis", detail: "Pain points to spreadsheet", sub: "Auto-extracts friction from Slack + Docs" },
     },
     {
       id: 4, name: "SOC2 Report Sharing SaaS", author: "Dan Stokeley",
@@ -66,7 +66,7 @@
       tools: ["Claude Code"],
       wins: ["Full SaaS built in 2\u20133 hours", "Casual input worked \u2014 Claude discerned intent reliably", "Hot-reloading was sweet"],
       quote: "Just generally the whole \u2018build me an app that could be a neat small business in 2\u20133 hours, where what I do mostly consists of entering Yes repeatedly\u2019.",
-      visual: { bg: "linear-gradient(135deg, #2a1a10, #4a2a0a)", title: "Full SaaS", detail: "2\u20133 hours", sub: "Marketing + auth + billing + admin" },
+      visual: { bg: "linear-gradient(135deg, #2a1a10, #4a2a0a)", title: "Full SaaS", detail: "Entire business in an afternoon", sub: "Marketing + auth + billing + admin" },
     },
     {
       id: 5, name: "Smart Contract Analysis", author: "Meghna Mehta",
@@ -75,7 +75,7 @@
       tools: ["Claude"],
       wins: ["Quickly understood complex smart contract code", "Better prepared for technical meeting"],
       quote: null,
-      visual: { bg: "linear-gradient(135deg, #0a1a3a, #0a2a5a)", title: "Contract parsing", detail: "Morpho vault", sub: "Smart contract rights analysis" },
+      visual: { bg: "linear-gradient(135deg, #0a1a3a, #0a2a5a)", title: "Contract parsing", detail: "Decoded vault rights in minutes", sub: "Morpho lending protocol analysis" },
     },
     {
       id: 6, name: "BashBoard", author: "Narek Tamoyan",
@@ -84,7 +84,7 @@
       tools: ["Cursor", "Claude"],
       wins: ["Chrome extension + dashboard + Jira integration built in one day", "Agent team approach (Cursor + Claude)"],
       quote: "It replaces the Google Doc bug bash workflow with a structured end-to-end tool.",
-      visual: { bg: "linear-gradient(135deg, #1a2030, #1a3050)", title: "Bug bash 2.0", detail: "3 components", sub: "Extension + dashboard + Jira export" },
+      visual: { bg: "linear-gradient(135deg, #1a2030, #1a3050)", title: "Bug bash 2.0", detail: "Capture, triage, export", sub: "Extension + dashboard + Jira in one day" },
     },
     {
       id: 7, name: "AI-Optimized PM Workflows", author: "Josh Ackerman",
@@ -93,7 +93,7 @@
       tools: ["Claude Code", "go/chat", "NotebookLM", "KCM Review Agent", "Hubble MCP"],
       wins: ["5\u201310 parallel Claude Code agents for queries", "Text expander + go/chat for meeting summaries", "NotebookLM for user feedback synthesis"],
       quote: "Wait a second, am I now the prompt-er or am I being prompt-ed? Who is the agent here?!",
-      visual: { bg: "linear-gradient(135deg, #2a2010, #3a3010)", title: "Parallel agents", detail: "5\u201310 at once", sub: "Hubble, meetings, SOKRs, feedback" },
+      visual: { bg: "linear-gradient(135deg, #2a2010, #3a3010)", title: "Parallel agents", detail: "10 agents, one PM", sub: "Hubble, meetings, SOKRs, feedback" },
     },
     {
       id: 8, name: "Radar for Platforms Sales Support", author: "Alisa Noll",
@@ -102,7 +102,7 @@
       tools: ["Claude Code", "Slack MCP"],
       wins: ["Three distinct tools built in one day", "Direct sales pipeline applications"],
       quote: null,
-      visual: { bg: "linear-gradient(135deg, #2a0a1a, #4a0a2a)", title: "Sales toolkit", detail: "3 tools", sub: "Pitch agent + alerts + fraud dashboard" },
+      visual: { bg: "linear-gradient(135deg, #2a0a1a, #4a0a2a)", title: "Sales toolkit", detail: "Pitch, alert, investigate", sub: "Three fraud + sales tools in one day" },
     },
     {
       id: 9, name: "Easy Point of Sale", author: "Kate Brennan",
@@ -111,7 +111,7 @@
       tools: ["Replit", "Claude Code", "Stripe Terminal", "Gemini"],
       wins: ["Built in ~90 minutes", "Claimable sandboxes for seamless Replit integration", "Demonstrates empathy with user jobs-to-be-done"],
       quote: "Nearly 5% of Terminal lost deals are due to \u2018not enough engineering resources to build a custom point of sale\u2019. Let\u2019s equip our future users to build faster.",
-      visual: { bg: "linear-gradient(135deg, #0a2a1a, #0a4a2a)", title: "POS prototype", detail: "90 minutes", sub: "Terminal T600 + web POS" },
+      visual: { bg: "linear-gradient(135deg, #0a2a1a, #0a4a2a)", title: "POS prototype", detail: "Tap-to-pay in 90 minutes", sub: "Terminal T600 + web POS" },
     },
     {
       id: 10, name: "Soura \u2014 Relationship Health Check", author: "Jennifer Lee",
@@ -120,7 +120,7 @@
       tools: ["Claude Code", "Slack API", "Google Calendar API"],
       wins: ["Iterative sculpting workflow felt natural", "Background processing solved rate limiting", "Metrics-first, privacy-minded design"],
       quote: "It felt like sculpting: \u2018more like this, less like that\u2019 until it clicked.",
-      visual: { bg: "linear-gradient(135deg, #1a0a30, #3a0a50)", title: "Soura Score", detail: "0\u2013100", sub: "DM + calendar relationship analytics" },
+      visual: { bg: "linear-gradient(135deg, #1a0a30, #3a0a50)", title: "Soura Score", detail: "Score your relationships", sub: "DM + calendar health analytics" },
     },
     {
       id: 11, name: "VAT ID Pattern Validation", author: "Rutvij Oza",
@@ -129,7 +129,7 @@
       tools: ["Claude Code"],
       wins: ["Asking \u2018why\u2019 questions saved days of work", "Simple frontend approach beat complex devbox orchestration", "300 lines of TypeScript with 17 tests"],
       quote: "Architecture > code speed: The backend implementation was technically correct but architecturally wrong. AI writes code fast, but you need to guide the approach.",
-      visual: { bg: "linear-gradient(135deg, #0a1a2a, #1a2a3a)", title: "Production code", detail: "17 tests", sub: "VAT fraud pattern detection" },
+      visual: { bg: "linear-gradient(135deg, #0a1a2a, #1a2a3a)", title: "Fraud detection", detail: "Caught fake VATs at checkout", sub: "Production code + 17 passing tests" },
     },
     {
       id: 12, name: "VAT/GST Registration Advisor", author: "Aleksandra Bal",
@@ -138,7 +138,7 @@
       tools: ["Claude Code"],
       wins: ["Thorough planning (4h) made build phase fast (2h)", "Tax specialist domain expertise ensured accurate rules", "Simple tech stack (Flask, TSV flat file for rules)"],
       quote: "A key takeaway: thorough upfront planning makes the build phase significantly easier.",
-      visual: { bg: "linear-gradient(135deg, #1a2a1a, #2a3a1a)", title: "Tax advisor", detail: "48 rules", sub: "EU, UK, Australia jurisdictions" },
+      visual: { bg: "linear-gradient(135deg, #1a2a1a, #2a3a1a)", title: "Tax advisor", detail: "48 jurisdictions, one questionnaire", sub: "EU, UK, Australia VAT/GST rules" },
     },
     {
       id: 13, name: "RISA Compliance Survey Refresh", author: "Daniel Heffernan",
@@ -147,7 +147,7 @@
       tools: ["Claude (Cursor)", "Claude Code"],
       wins: ["Speed on mechanical work \u2014 hours reduced to minutes", "Human review caught a real pre-existing stale data bug", "Iterative collaboration \u2014 Claude adapted when pushed back"],
       quote: "I treated Cursor w/ Claude as a smart engineer and acted as the EM, and it solved it.",
-      visual: { bg: "linear-gradient(135deg, #2a1a0a, #3a2a0a)", title: "Production PRs", detail: "8 PRs merged", sub: "Backend + frontend + partner pipelines" },
+      visual: { bg: "linear-gradient(135deg, #2a1a0a, #3a2a0a)", title: "Production PRs", detail: "8 PRs across the full stack", sub: "Backend + frontend + partner pipelines" },
     },
     {
       id: 14, name: "Stripe Japan X Monitor", author: "Daniel Heffernan",
@@ -156,7 +156,52 @@
       tools: ["Claude Code", "val.town", "RSS.app", "GPT-4o-mini", "Superwhisper"],
       wins: ["Rapid exploration of 3 solution spaces in one day", "Discovery through AI \u2014 found val.town built-in OpenAI access", "$0/month on free tiers"],
       quote: "For a PM who can read code and has opinions about what should be built, AI coding assistants are transformative.",
-      visual: { bg: "linear-gradient(135deg, #2a0a0a, #4a1010)", title: "Social monitor", detail: "$0/month", sub: "Japanese X \u2192 Slack via LLM filter" },
+      visual: { bg: "linear-gradient(135deg, #2a0a0a, #4a1010)", title: "Social monitor", detail: "Free social listening at scale", sub: "Japanese X \u2192 Slack via LLM filter" },
+    },
+    {
+      id: 15, name: "Shelf Help Books", author: "Gary Pelissier",
+      category: "customer-facing",
+      summary: "Built a live e-commerce bookstore (shelfhelpbooks.shop) using only AI tools to dogfood Stripe\u2019s Local Payment Methods, Dynamic Payment Methods, and Checkout optimization. Full storefront assembled in 35 minutes.",
+      tools: ["Lovable", "ChatGPT", "Stripe Checkout", "Dynamic Payment Methods"],
+      wins: ["Fully functional live storefront in under 35 minutes", "Tested Dynamic Payment Methods including Affirm threshold logic", "Exposed real UX pain point: Stripe approval took longer than the entire build"],
+      quote: "Time to build an online merchant: 20 mins. Time to integrate Stripe: 10 mins. Time for Stripe to approve my merchant: 2\u20133 days. This seems like a miss.",
+      visual: { bg: "linear-gradient(135deg, #3a2010, #5a3520)", title: "LPM dogfood", detail: "Live store in 35 minutes", sub: "Bookshop testing Dynamic Payment Methods" },
+    },
+    {
+      id: 16, name: "Terminal Dashboard Onboarding Prototype", author: "Denise Young",
+      category: "internal-tools",
+      summary: "Rapidly prototyped a new dynamic, user-intent-aware Terminal Dashboard Onboarding flow using Protodash, replacing the current static setup with one that adapts based on integration path.",
+      tools: ["Protodash", "Claude Code"],
+      wins: ["Full interactive onboarding prototype in under a day", "Protodash enforced Sail design language automatically", "Used Claude Code to locate Fox component source code for pixel-perfect recreation"],
+      quote: "Screenshot-to-Code is super powerful. I fed the AI screenshots of our existing dashboard, and it recreated them as working React components with almost zero prompting.",
+      visual: { bg: "linear-gradient(135deg, #0a2030, #1a3050)", title: "Smart onboarding", detail: "Adapts to how you integrate", sub: "Screenshot-to-code Terminal prototype" },
+    },
+    {
+      id: 17, name: "Refund Friction Analyst", author: "Vighnesh Kumar Pathak",
+      category: "internal-tools",
+      summary: "Built two tools: a Protodash prototype surfacing L2/L3 missing/poor data quality in the Stripe dashboard, and an agent that tracks refund-related Slack DMs and builds a priority backlog from Jiras.",
+      tools: ["Protodash", "Agent Builder (FinLLM)"],
+      wins: ["Agent Builder easier to use than expected", "Protodash auto-implements in Stripe design style", "Dedicated AI-cation day reduced barrier to tool adoption"],
+      quote: "Agent builder is a lot easier to use than I expected. I can definitely see myself delegating more work to agents.",
+      visual: { bg: "linear-gradient(135deg, #1a1a30, #2a2a50)", title: "Data quality", detail: "Refund issues surfaced automatically", sub: "Dashboard prototype + Slack tracking agent" },
+    },
+    {
+      id: 18, name: "3DS Product Suite", author: "Cip Blujdea",
+      category: "automation",
+      summary: "Built three things in one day: a GTM dashboard in Hubble for Authentication metrics, an improved Claude Code \u201CPM brain extension,\u201D and a FinLLM agent that answers 3D Secure questions and writes RFPs.",
+      tools: ["Hubble", "Claude Code", "Agent Builder (FinLLM)"],
+      wins: ["FinLLM agent auto-generates RFPs about 3D Secure", "Built a GTM dashboard for real-time product metrics", "Improved personal Claude Code PM brain system"],
+      quote: "I built an agent that answers questions about my product and even writes RFPs about it, saving ~days of work in the future!",
+      visual: { bg: "linear-gradient(135deg, #2a1020, #4a1a30)", title: "RFP machine", detail: "Agent that writes your RFPs", sub: "3DS expert + GTM dashboard + PM brain" },
+    },
+    {
+      id: 19, name: "AI-cation Multi-Project", author: "Daniel Loke",
+      category: "customer-facing",
+      summary: "Built five experiments: an automated stand-up rotator, a \u201CBYO-LLM Stripe Data Assistant\u201D that lets merchants chat with their data (bypassing Sigma), a Lovable storefront with ACP, and Figma-to-code prototypes.",
+      tools: ["Claude Code", "Lovable", "Stripe ACP", "Anthropic API", "Figma MCP", "Stripe Pages"],
+      wins: ["Built a Stripe Data Assistant that poses a real question for Sigma", "Lovable one-shot the Stripe ACP integration from a single prompt", "Identified strategic insight: ACP growth is merchant-constrained"],
+      quote: "I built a custom Stripe app that allows users to chat with their Stripe data\u2026 This effectively bypassed the need to pay for Stripe Sigma.",
+      visual: { bg: "linear-gradient(135deg, #0a1a2a, #1a3040)", title: "Five experiments", detail: "Built a Sigma competitor", sub: "Data assistant + ACP shop + Figma-to-code" },
     }
   ];
 
@@ -169,7 +214,11 @@
     { text: "Nearly 5% of Terminal lost deals are due to \u2018not enough engineering resources to build a custom point of sale\u2019. Let\u2019s equip our future users to build faster.", author: "Kate Brennan", project: "Easy Point of Sale" },
     { text: "Architecture > code speed: AI writes code fast, but you need to guide the approach.", author: "Rutvij Oza", project: "VAT ID Pattern Validation" },
     { text: "I treated Cursor w/ Claude as a smart engineer and acted as the EM, and it solved it.", author: "Daniel Heffernan", project: "RISA Compliance Survey" },
-    { text: "The flywheel is starting to spin.", author: "Robbie Preswick", project: "Agent 515" }
+    { text: "The flywheel is starting to spin.", author: "Robbie Preswick", project: "Agent 515" },
+    { text: "Time to build an online merchant: 20 mins. Time to integrate Stripe: 10 mins. Time for Stripe to approve my merchant: 2\u20133 days.", author: "Gary Pelissier", project: "Shelf Help Books" },
+    { text: "Screenshot-to-Code is super powerful. I fed the AI screenshots of our existing dashboard, and it recreated them as working React components.", author: "Denise Young", project: "Terminal Onboarding" },
+    { text: "I built an agent that answers questions about my product and even writes RFPs, saving ~days of work in the future!", author: "Cip Blujdea", project: "3DS Product Suite" },
+    { text: "I built a custom Stripe app that allows users to chat with their Stripe data\u2026 effectively bypassing the need for Sigma.", author: "Daniel Loke", project: "AI-cation Multi-Project" }
   ];
 
   // --- Safe text helper (avoid innerHTML XSS) ---
@@ -219,8 +268,8 @@
             quoteHtml +
             '<div class="project-wins"><h4>What worked</h4><ul>' + winsHtml + "</ul></div>" +
             '<button class="vote-btn" data-vote="' + p.id + '">' +
-              "\u2605 Vote for this project " +
-              '<span class="price">$1 via Stripe Checkout</span>' +
+              "Vote for this project " +
+              '<span class="price">\u2014 $1 via Stripe Checkout</span>' +
             "</button>" +
           "</div>" +
         "</div>";
@@ -263,8 +312,8 @@
     if (!projectId) return;
 
     // Disable button while loading
-    btn.textContent = "Redirecting to Checkout...";
-    btn.style.opacity = "0.6";
+    btn.textContent = "Redirecting to Checkout\u2026";
+    btn.style.opacity = "0.5";
     btn.style.pointerEvents = "none";
 
     fetch("/create-checkout-session", {
@@ -278,14 +327,14 @@
         window.location.href = data.url;
       } else {
         window.alert("Error: " + (data.error || "Could not create checkout session"));
-        btn.innerHTML = "\u2605 Vote for this project <span class=\"price\">$1 via Stripe Checkout</span>";
+        btn.innerHTML = "Vote for this project <span class=\"price\">\u2014 $1 via Stripe Checkout</span>";
         btn.style.opacity = "1";
         btn.style.pointerEvents = "auto";
       }
     })
     .catch(function (err) {
       window.alert("Network error. Please try again.");
-      btn.innerHTML = "\u2605 Vote for this project <span class=\"price\">$1 via Stripe Checkout</span>";
+      btn.innerHTML = "Vote for this project <span class=\"price\">\u2014 $1 via Stripe Checkout</span>";
       btn.style.opacity = "1";
       btn.style.pointerEvents = "auto";
     });

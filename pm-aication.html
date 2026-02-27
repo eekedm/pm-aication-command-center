@@ -253,6 +253,8 @@ body {
   background: var(--surface);
   overflow: hidden;
   transition: transform .2s;
+  display: flex;
+  flex-direction: column;
 }
 .project-card:hover { transform: translateY(-3px); }
 
@@ -282,7 +284,12 @@ body {
   margin-top: 6px; letter-spacing: 0.5px;
 }
 
-.project-body { padding: 24px; }
+.project-body {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 .project-meta {
   display: flex; align-items: center; gap: 12px;
   margin-bottom: 16px;
@@ -357,6 +364,7 @@ body {
   cursor: pointer; transition: opacity .2s;
   text-align: center; text-decoration: none;
   line-height: 1.4;
+  margin-top: auto;
 }
 .vote-btn:hover { opacity: .85; }
 .vote-btn:disabled { opacity: .5; cursor: wait; }
@@ -460,7 +468,7 @@ body {
     <div class="container">
       <div class="issue-label">February 20 &ndash; 27, 2026</div>
       <h1>PM-aication Week</h1>
-      <div class="subtitle">14 PMs. One week. Building with AI. Here's what happened.</div>
+      <div class="subtitle">19 projects. 16 builders. One week with AI. Here's what happened.</div>
     </div>
   </div>
 
@@ -469,19 +477,19 @@ body {
     <div class="container">
       <div class="stats-bar">
         <div class="stat-card">
-          <div class="number">14</div>
+          <div class="number">19</div>
           <div class="label">Projects shipped</div>
         </div>
         <div class="stat-card">
-          <div class="number">12</div>
+          <div class="number">16</div>
           <div class="label">Unique builders</div>
         </div>
         <div class="stat-card">
-          <div class="number">86%</div>
+          <div class="number">79%</div>
           <div class="label">Used Claude Code</div>
         </div>
         <div class="stat-card">
-          <div class="number">16</div>
+          <div class="number">30+</div>
           <div class="label">Tools used</div>
         </div>
       </div>
@@ -498,20 +506,20 @@ body {
         <div class="donut-container">
           <svg width="160" height="160" viewBox="0 0 160 160">
             <circle cx="80" cy="80" r="60" fill="none" stroke="#363b8f" stroke-width="24"
-              stroke-dasharray="94.2 282.7" stroke-dashoffset="0" transform="rotate(-90 80 80)"/>
+              stroke-dasharray="138.9 238.1" stroke-dashoffset="0" transform="rotate(-90 80 80)"/>
             <circle cx="80" cy="80" r="60" fill="none" stroke="#e20a39" stroke-width="24"
-              stroke-dasharray="94.2 282.7" stroke-dashoffset="-94.2" transform="rotate(-90 80 80)"/>
+              stroke-dasharray="138.9 238.1" stroke-dashoffset="-138.9" transform="rotate(-90 80 80)"/>
             <circle cx="80" cy="80" r="60" fill="none" stroke="#c4930a" stroke-width="24"
-              stroke-dasharray="56.5 320.4" stroke-dashoffset="-188.4" transform="rotate(-90 80 80)"/>
+              stroke-dasharray="79.4 297.6" stroke-dashoffset="-277.8" transform="rotate(-90 80 80)"/>
             <circle cx="80" cy="80" r="60" fill="none" stroke="#2a7a5a" stroke-width="24"
-              stroke-dasharray="18.8 358.1" stroke-dashoffset="-244.9" transform="rotate(-90 80 80)"/>
-            <text x="80" y="78" text-anchor="middle" fill="#121212" font-size="24" font-weight="800">14</text>
+              stroke-dasharray="19.8 357.2" stroke-dashoffset="-357.2" transform="rotate(-90 80 80)"/>
+            <text x="80" y="78" text-anchor="middle" fill="#121212" font-size="24" font-weight="800">19</text>
             <text x="80" y="96" text-anchor="middle" fill="#888888" font-size="11">projects</text>
           </svg>
           <div class="donut-legend">
-            <div class="legend-item"><div class="legend-dot" style="background:#363b8f"></div> Internal tools <span class="legend-count">5</span></div>
-            <div class="legend-item"><div class="legend-dot" style="background:#e20a39"></div> Customer-facing <span class="legend-count">5</span></div>
-            <div class="legend-item"><div class="legend-dot" style="background:#c4930a"></div> Automation <span class="legend-count">3</span></div>
+            <div class="legend-item"><div class="legend-dot" style="background:#363b8f"></div> Internal tools <span class="legend-count">7</span></div>
+            <div class="legend-item"><div class="legend-dot" style="background:#e20a39"></div> Customer-facing <span class="legend-count">7</span></div>
+            <div class="legend-item"><div class="legend-dot" style="background:#c4930a"></div> Automation <span class="legend-count">4</span></div>
             <div class="legend-item"><div class="legend-dot" style="background:#2a7a5a"></div> Data analysis <span class="legend-count">1</span></div>
           </div>
         </div>
@@ -522,32 +530,32 @@ body {
         <h3>Top tools used</h3>
         <div class="bar-row">
           <div class="bar-label">Claude Code</div>
-          <div class="bar-track"><div class="bar-fill" style="width:86%;background:#363b8f">86%</div></div>
-          <div class="bar-count">12</div>
+          <div class="bar-track"><div class="bar-fill" style="width:79%;background:#363b8f">79%</div></div>
+          <div class="bar-count">15</div>
         </div>
         <div class="bar-row">
           <div class="bar-label">Slack MCP</div>
-          <div class="bar-track"><div class="bar-fill" style="width:21%;background:#2a7a5a">21%</div></div>
+          <div class="bar-track"><div class="bar-fill" style="width:16%;background:#2a7a5a">16%</div></div>
           <div class="bar-count">3</div>
         </div>
         <div class="bar-row">
-          <div class="bar-label">Claude (Cursor)</div>
-          <div class="bar-track"><div class="bar-fill" style="width:14%;background:#e20a39">14%</div></div>
+          <div class="bar-label">Protodash</div>
+          <div class="bar-track"><div class="bar-fill" style="width:11%;background:#e20a39">11%</div></div>
+          <div class="bar-count">2</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Agent Builder</div>
+          <div class="bar-track"><div class="bar-fill" style="width:11%;background:#c4930a">11%</div></div>
+          <div class="bar-count">2</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Lovable</div>
+          <div class="bar-track"><div class="bar-fill" style="width:11%;background:#121212">11%</div></div>
           <div class="bar-count">2</div>
         </div>
         <div class="bar-row">
           <div class="bar-label">CC Skills</div>
-          <div class="bar-track"><div class="bar-fill" style="width:14%;background:#c4930a">14%</div></div>
-          <div class="bar-count">2</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">GDocs MCP</div>
-          <div class="bar-track"><div class="bar-fill" style="width:14%;background:#121212">14%</div></div>
-          <div class="bar-count">2</div>
-        </div>
-        <div class="bar-row">
-          <div class="bar-label">Replit / val.town</div>
-          <div class="bar-track"><div class="bar-fill" style="width:14%;background:#888">14%</div></div>
+          <div class="bar-track"><div class="bar-fill" style="width:11%;background:#888">11%</div></div>
           <div class="bar-count">2</div>
         </div>
       </div>
@@ -580,7 +588,7 @@ body {
   <div class="page-footer">
     <div class="container">
       PM-aication Week, Feb 20&ndash;27 2026 &middot; Vote closes March 7<br>
-      Generated February 26, 2026
+      Generated February 27, 2026
     </div>
   </div>
 

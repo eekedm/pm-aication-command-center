@@ -28,6 +28,11 @@ const projects = [
   { id: 12, name: "VAT/GST Registration Advisor", author: "Aleksandra Bal" },
   { id: 13, name: "RISA Compliance Survey Refresh", author: "Daniel Heffernan" },
   { id: 14, name: "Stripe Japan X Monitor", author: "Daniel Heffernan" },
+  { id: 15, name: "Shelf Help Books", author: "Gary Pelissier" },
+  { id: 16, name: "Terminal Dashboard Onboarding Prototype", author: "Denise Young" },
+  { id: 17, name: "Refund Friction Analyst", author: "Vighnesh Kumar Pathak" },
+  { id: 18, name: "3DS Product Suite", author: "Cip Blujdea" },
+  { id: 19, name: "AI-cation Multi-Project", author: "Daniel Loke" },
 ];
 
 // --- Create Checkout Session ---
