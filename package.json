@@ -1,0 +1,11 @@
+{
+  "name": "pm-aication-command-center",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "stripe": "^17.5.0"
+  }
+}

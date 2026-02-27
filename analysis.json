@@ -1,0 +1,215 @@
+{
+  "metadata": {
+    "total_submissions": 14,
+    "unique_authors": 12,
+    "date_range": "2026-02-20 to 2026-02-27",
+    "analysis_date": "2026-02-26"
+  },
+
+  "theme_clusters": {
+    "internal-tools": {
+      "count": 5,
+      "projects": ["Friction Point Aggregation Tool", "BashBoard", "Soura - Relationship Health Check", "Radar for Platforms Sales Support", "Stripe Japan X Monitor"],
+      "description": "Tools built to improve internal workflows, monitoring, and productivity"
+    },
+    "customer-facing": {
+      "count": 5,
+      "projects": ["Machine Payments Coffee Order", "SOC2 Report Sharing SaaS", "Easy Point of Sale", "VAT ID Pattern Validation", "VAT/GST Registration Advisor"],
+      "description": "Products or prototypes directly serving end users or merchants"
+    },
+    "automation": {
+      "count": 3,
+      "projects": ["Agent 515 Weekly Synthesis", "AI-Optimized PM Workflows", "RISA Compliance Survey Refresh"],
+      "description": "Automating repetitive PM workflows and operational tasks"
+    },
+    "data-analysis": {
+      "count": 1,
+      "projects": ["Smart Contract Analysis"],
+      "description": "Using AI for deep technical analysis and preparation"
+    }
+  },
+
+  "tool_usage_frequency": {
+    "Claude Code": {"count": 12, "pct": 86, "projects": [1,2,3,4,7,8,9,10,11,12,13,14]},
+    "Claude (Cursor)": {"count": 2, "pct": 14, "projects": [6,13]},
+    "Claude Code Skills": {"count": 2, "pct": 14, "projects": [1,3]},
+    "Google Docs/Sheets MCP": {"count": 2, "pct": 14, "projects": [1,3]},
+    "Slack MCP/API": {"count": 3, "pct": 21, "projects": [1,3,8]},
+    "Hubble MCP": {"count": 1, "pct": 7, "projects": [7]},
+    "Replit": {"count": 1, "pct": 7, "projects": [9]},
+    "go/chat": {"count": 1, "pct": 7, "projects": [7]},
+    "NotebookLM": {"count": 1, "pct": 7, "projects": [7]},
+    "Privy wallet": {"count": 1, "pct": 7, "projects": [2]},
+    "Stripe Machine Payments": {"count": 1, "pct": 7, "projects": [2]},
+    "val.town": {"count": 1, "pct": 7, "projects": [14]},
+    "Figma MCP": {"count": 1, "pct": 7, "projects": [1]},
+    "Gemini": {"count": 1, "pct": 7, "projects": [9]},
+    "Superwhisper": {"count": 1, "pct": 7, "projects": [14]},
+    "KCM Review Agent": {"count": 1, "pct": 7, "projects": [7]}
+  },
+
+  "top_friction_points": [
+    {
+      "rank": 1,
+      "issue": "Setup and onboarding friction",
+      "affected_count": 4,
+      "authors": ["alexandras", "rutvij", "daniel", "kateb"],
+      "quotes": [
+        "Getting access to the right tools was my biggest hurdle. (alexandras)",
+        "6 hours of setup struggles — disk space, DevBox, feature gating. (rutvij)",
+        "Manual testing the account app on devboxes was painful. (daniel)",
+        "I couldn't access the Google Sheets append tool initially — stuck in a loop from not setting up the MCP server correctly. (alexandras)"
+      ],
+      "suggested_fix": "Streamlined MCP setup wizard, pre-configured PM devbox template, better error messages for common setup issues"
+    },
+    {
+      "rank": 2,
+      "issue": "AI overconfidence / false claims about capabilities",
+      "affected_count": 3,
+      "authors": ["rutvij", "daniel", "alexandras"],
+      "quotes": [
+        "Claude claimed it could gate feature flags. It couldn't. Always verify system access claims. (rutvij)",
+        "Had to tell Claude not to push without approval repeatedly. (daniel)",
+        "Claude over-extracted then under-extracted — needed calibration examples. (alexandras)"
+      ],
+      "suggested_fix": "Better guardrails on tool access claims, explicit capability boundaries in system prompts"
+    },
+    {
+      "rank": 3,
+      "issue": "CI/devbox workflow friction",
+      "affected_count": 2,
+      "authors": ["daniel", "rutvij"],
+      "quotes": [
+        "CI autofix awareness — kept regenerating locally instead of pulling CI autofixes. (daniel)",
+        "Cursor requires machine to stay awake for long CI cycles. (daniel)",
+        "Simple frontend approach beat complex devbox orchestration. (rutvij)"
+      ],
+      "suggested_fix": "Auto-detect CI autofix availability, better devbox setup documentation for PMs, tmux-based workflow recommendation"
+    },
+    {
+      "rank": 4,
+      "issue": "Slack API rate limiting and permissions",
+      "affected_count": 2,
+      "authors": ["jenlee", "alexandras"],
+      "quotes": [
+        "Slack API rate limiting was brutal — all optimization attempts failed. (jenlee)",
+        "The permissions issues were annoying — had to build a new Slack app and fiddle with OAuth tokens endlessly. (jenlee)"
+      ],
+      "suggested_fix": "Pre-configured Slack app templates for common PM use cases, better rate limit handling in MCP tools"
+    },
+    {
+      "rank": 5,
+      "issue": "Context window / session continuity",
+      "affected_count": 2,
+      "authors": ["preswick", "daniel"],
+      "quotes": [
+        "Ambiguous prompts waste cycles — no channel, no timeframe, no relationship context. (preswick)",
+        "Each time we resumed, I had to re-establish context from the transcript. Daniel kept the project's narrative in his head across weeks; I had to reconstruct it each time. (daniel/claude)"
+      ],
+      "suggested_fix": "Better session handoff tooling, structured context templates for multi-session projects"
+    }
+  ],
+
+  "fireside_candidates": [
+    {
+      "project_id": 10,
+      "project_name": "Soura - Relationship Health Check",
+      "author": "Jennifer Lee (jenlee)",
+      "novelty": 5,
+      "impact": 4,
+      "storytelling": 5,
+      "composite_score": 14,
+      "rationale": "Highly original concept (Oura ring for work relationships), rich narrative with mock interview format, practical PM tool with distribution potential"
+    },
+    {
+      "project_id": 2,
+      "project_name": "Machine Payments Coffee Order",
+      "author": "Jennifer Lee (jenlee)",
+      "novelty": 5,
+      "impact": 4,
+      "storytelling": 5,
+      "composite_score": 14,
+      "rationale": "Agent-to-agent commerce with real stablecoin payment — showcases machine payments, onramp, and crypto in one flow. The coffee photo is the perfect punchline."
+    },
+    {
+      "project_id": 14,
+      "project_name": "Stripe Japan X Monitor",
+      "author": "Daniel Heffernan (daniel)",
+      "novelty": 4,
+      "impact": 4,
+      "storytelling": 5,
+      "composite_score": 13,
+      "rationale": "Excellent narrative arc (failed approaches → discovery → elegant solution). $0/month cost. Great meta-section on writing the report with AI."
+    },
+    {
+      "project_id": 13,
+      "project_name": "RISA Compliance Survey Refresh",
+      "author": "Daniel Heffernan (daniel)",
+      "novelty": 3,
+      "impact": 5,
+      "storytelling": 5,
+      "composite_score": 13,
+      "rationale": "Real production impact across 8 PRs. Unique 'Claude writes its own retrospective' section. Strongest demonstration of PM-as-EM pattern."
+    },
+    {
+      "project_id": 1,
+      "project_name": "Agent 515 Weekly Synthesis",
+      "author": "Robbie Preswick (preswick)",
+      "novelty": 5,
+      "impact": 3,
+      "storytelling": 4,
+      "composite_score": 12,
+      "rationale": "Meta and delightful — agents writing their own 515 and roasting the human. 34 sessions / 9 skills in one week shows the fleet model."
+    },
+    {
+      "project_id": 4,
+      "project_name": "SOC2 Report Sharing SaaS",
+      "author": "Dan Stokeley (stokeley)",
+      "novelty": 3,
+      "impact": 4,
+      "storytelling": 5,
+      "composite_score": 12,
+      "rationale": "Full SaaS built in 2-3 hours. Great demo of 'vibe-coded startup' potential. Quotable: 'what I do mostly consists of entering Yes repeatedly'."
+    },
+    {
+      "project_id": 6,
+      "project_name": "BashBoard",
+      "author": "Narek Tamoyan (narek)",
+      "novelty": 4,
+      "impact": 4,
+      "storytelling": 3,
+      "composite_score": 11,
+      "rationale": "Practical improvement to a real pain point (Google Doc bug bash). Chrome extension + dashboard + Jira export in one day."
+    },
+    {
+      "project_id": 9,
+      "project_name": "Easy Point of Sale",
+      "author": "Kate Brennan (kateb)",
+      "novelty": 3,
+      "impact": 4,
+      "storytelling": 4,
+      "composite_score": 11,
+      "rationale": "Directly addresses 5% of lost Terminal deals. Built in 90 minutes. Shows PMs can prototype solutions for user jobs-to-be-done."
+    },
+    {
+      "project_id": 12,
+      "project_name": "VAT/GST Registration Advisor",
+      "author": "Aleksandra Bal (aleksandrabal)",
+      "novelty": 3,
+      "impact": 4,
+      "storytelling": 3,
+      "composite_score": 10,
+      "rationale": "48 jurisdiction-specific rules with real legal accuracy. Strong demonstration of domain expertise + AI speed."
+    },
+    {
+      "project_id": 3,
+      "project_name": "Friction Point Aggregation Tool",
+      "author": "Alexandra Scolieri (alexandras)",
+      "novelty": 3,
+      "impact": 4,
+      "storytelling": 3,
+      "composite_score": 10,
+      "rationale": "Reusable skill for ongoing feedback synthesis. Good story about calibration challenges."
+    }
+  ]
+}
