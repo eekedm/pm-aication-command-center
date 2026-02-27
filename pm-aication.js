@@ -355,7 +355,11 @@
     if (page !== undefined) currentPage = page;
 
     var grid = document.getElementById("projects-grid");
-    var filtered = getFilteredProjects(currentFilter);
+    var filtered = getFilteredProjects(currentFilter).slice().sort(function (a, b) {
+      var aDemo = a.demo_url ? 0 : 1;
+      var bDemo = b.demo_url ? 0 : 1;
+      return aDemo - bDemo;
+    });
     var totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
     if (currentPage > totalPages) currentPage = totalPages || 1;
 
@@ -403,8 +407,7 @@
             '<div class="project-wins"><h4>What worked</h4><ul>' + winsHtml + "</ul></div>" +
             linksHtml +
             '<button class="vote-btn" data-vote="' + p.id + '">' +
-              "Vote for this project " +
-              '<span class="price">\u2014 $1 via Stripe Checkout</span>' +
+              "Vote for this project $1" +
             "</button>" +
           "</div>" +
         "</div>";
@@ -491,14 +494,14 @@
         window.location.href = data.url;
       } else {
         window.alert("Error: " + (data.error || "Could not create checkout session"));
-        btn.innerHTML = "Vote for this project <span class=\"price\">\u2014 $1 via Stripe Checkout</span>";
+        btn.textContent = "Vote for this project $1";
         btn.style.opacity = "1";
         btn.style.pointerEvents = "auto";
       }
     })
     .catch(function (err) {
       window.alert("Network error. Please try again.");
-      btn.innerHTML = "Vote for this project <span class=\"price\">\u2014 $1 via Stripe Checkout</span>";
+      btn.textContent = "Vote for this project $1";
       btn.style.opacity = "1";
       btn.style.pointerEvents = "auto";
     });
