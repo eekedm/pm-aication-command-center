@@ -45,6 +45,12 @@ const projects = [
   { id: 29, name: "Partner Reporting Platform Fix", author: "RK" },
   { id: 30, name: "Product Changelog & Slack App", author: "Miles M." },
   { id: 31, name: "Enterprise Cost Management Prototype", author: "Paul Meagher" },
+  { id: 32, name: "Projects Built with Claude Code", author: "Alan Tam" },
+  { id: 33, name: "GTM Insights AI Workflows", author: "Akshay Bhalla" },
+  { id: 34, name: "Sail Classic to Sail Next Migration", author: "Connor Rowland" },
+  { id: 35, name: "AI Documentation & Feature Flags", author: "Kelly Moriarty" },
+  { id: 36, name: "Vault & Forward Wallet Docs", author: "Maria Yang" },
+  { id: 37, name: "EU Crypto Onramp PRD", author: "Patrick Kelly" },
 ];
 
 // --- Create Checkout Session ---
