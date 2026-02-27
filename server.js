@@ -33,6 +33,18 @@ const projects = [
   { id: 17, name: "Refund Friction Analyst", author: "Vighnesh Kumar Pathak" },
   { id: 18, name: "3DS Product Suite", author: "Cip Blujdea" },
   { id: 19, name: "AI-cation Multi-Project", author: "Daniel Loke" },
+  { id: 20, name: "Trial Email Bug Fix", author: "Oliver W." },
+  { id: 21, name: "Capital Weekly Periods Admin Fix", author: "Cecelia Shao" },
+  { id: 22, name: "Org-level Blueprints in Workbench", author: "David Wood" },
+  { id: 23, name: "Daily Meeting Brief Skill", author: "Jaeel" },
+  { id: 24, name: "Connect Distribution Trends Agent", author: "David Yang" },
+  { id: 25, name: "Money Management Mobile App", author: "Lola" },
+  { id: 26, name: "Instant Payouts Element Prototype", author: "Ha Lee" },
+  { id: 27, name: "Connect Traits Explorer", author: "Ivan Ribeiro" },
+  { id: 28, name: "Fund Flow Agent", author: "Hernan Herrera" },
+  { id: 29, name: "Partner Reporting Platform Fix", author: "RK" },
+  { id: 30, name: "Product Changelog & Slack App", author: "Miles M." },
+  { id: 31, name: "Enterprise Cost Management Prototype", author: "Paul Meagher" },
 ];
 
 // --- Create Checkout Session ---

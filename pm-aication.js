@@ -202,6 +202,114 @@
       wins: ["Built a Stripe Data Assistant that poses a real question for Sigma", "Lovable one-shot the Stripe ACP integration from a single prompt", "Identified strategic insight: ACP growth is merchant-constrained"],
       quote: "I built a custom Stripe app that allows users to chat with their Stripe data\u2026 This effectively bypassed the need to pay for Stripe Sigma.",
       visual: { bg: "linear-gradient(135deg, #0a1a2a, #1a3040)", title: "Five experiments", detail: "Built a Sigma competitor", sub: "Data assistant + ACP shop + Figma-to-code" },
+    },
+    {
+      id: 20, name: "Trial Email Bug Fix", author: "Oliver W.",
+      category: "customer-facing",
+      summary: "Closed a real customer escalation by fixing a trial email bug end-to-end using Claude Code \u2014 from escalation to merged PR in days, learning Stripe\u2019s architecture faster than any doc review.",
+      tools: ["Claude Code"],
+      wins: ["Resolved real customer escalation with merged PR", "Learned architecture faster than doc review", "Demonstrated PM-to-production pipeline"],
+      quote: "It is extremely empowering to see how fast we can land customer impact with a real problem and learn our architecture faster than any doc review with AI.",
+      visual: { bg: "linear-gradient(135deg, #1a2a20, #2a3a30)", title: "Customer fix", detail: "Escalation to merged PR", sub: "PM shipped production code via Claude" },
+    },
+    {
+      id: 21, name: "Capital Weekly Periods Admin Fix", author: "Cecelia Shao",
+      category: "internal-tools",
+      summary: "Shipped 2 PRs to make Capital weekly periods render legibly on the admin page, after 6 session compressions and two late nights. Next: backend math for multi-period deferrals.",
+      tools: ["Claude Code"],
+      wins: ["Shipped 2 production PRs to admin page", "Persisted through 6 context compressions", "Unlocked multi-period deferral work"],
+      quote: "There is light at the end of the tunnel y\u2019all.",
+      visual: { bg: "linear-gradient(135deg, #2a1a30, #3a2a40)", title: "Admin overhaul", detail: "6 compressions, 2 PRs shipped", sub: "Capital weekly periods now readable" },
+    },
+    {
+      id: 22, name: "Org-level Blueprints in Workbench", author: "David Wood",
+      category: "customer-facing",
+      summary: "Built a live fullstack demo of org-level Blueprints in Workbench for the Customer and Payment Method Sharing GA, including a new getting-started flow directing users to test sharing in a sandbox org.",
+      tools: ["Claude Code"],
+      wins: ["Live fullstack demo deployed end-to-end", "New getting-started flow for sandbox orgs", "Tooling enabled tackling a bigger project than expected"],
+      quote: "Our tooling is so impressive and enabled me to tackle a much bigger project than I initially thought possible.",
+      visual: { bg: "linear-gradient(135deg, #0a2a30, #1a3a40)", title: "Org Blueprints", detail: "Fullstack demo, live in Workbench", sub: "Customer + PM sharing getting-started flow" },
+    },
+    {
+      id: 23, name: "Daily Meeting Brief Skill", author: "Jaeel",
+      category: "automation",
+      summary: "Built a /today-meetings Claude Code skill that pulls calendar events, scans public Slack channels, Google Drive, and Gmail for context, then sends a comprehensive day overview via Slack DM.",
+      tools: ["Claude Code", "Toolshed OAuth", "Slack MCP", "Google Calendar", "Gmail"],
+      wins: ["One command generates full daily briefing", "Cross-references multiple data sources for meeting context", "Actionable talking points per meeting"],
+      quote: null,
+      visual: { bg: "linear-gradient(135deg, #1a1a2a, #2a2a4a)", title: "Meeting prep", detail: "AI reads your whole day", sub: "Calendar + Slack + Drive + Gmail in one brief" },
+    },
+    {
+      id: 24, name: "Connect Distribution Trends Agent", author: "David Yang",
+      category: "data-analysis",
+      summary: "Created a go/chat agent that analyzes Connect product distribution trends across six P0 products (Adaptive Pricing, LPMs, Capital, Billing, Instant Payouts, Terminal), outputs Google Docs, and plans to automate the MBR deck.",
+      tools: ["go/chat Agent", "Hubble", "Google Docs MCP"],
+      wins: ["Instant ONR trend analysis across 6 P0 products", "Auto-generates formatted Google Doc reports", "Roadmap to fully automate MBR deck creation"],
+      quote: null,
+      visual: { bg: "linear-gradient(135deg, #0a2a1a, #1a4a2a)", title: "P0 trends", detail: "Six products, one agent", sub: "Connect ONR trends \u2192 auto-generated MBR" },
+    },
+    {
+      id: 25, name: "Money Management Mobile App", author: "Lola",
+      category: "customer-facing",
+      summary: "Built a rough prototype of a money management-only mobile app using Claude, deployed on Vercel. Left the experience feeling energized about what\u2019s possible.",
+      tools: ["Claude", "Vercel"],
+      wins: ["Functional mobile prototype deployed to Vercel", "Learned a lot through hands-on building", "Demonstrated mobile-first financial app concept"],
+      quote: null,
+      visual: { bg: "linear-gradient(135deg, #2a1a2a, #4a2a4a)", title: "Mobile finance", detail: "Money management in your pocket", sub: "Mobile app prototype on Vercel" },
+    },
+    {
+      id: 26, name: "Instant Payouts Element Prototype", author: "Ha Lee",
+      category: "customer-facing",
+      summary: "Demoed a new Stripe Element for Instant Payouts that owns all eligibility checking, risk evaluation, UI, fee calculation, and payout submission \u2014 letting platforms enable IP in ~15 lines of code.",
+      tools: ["Claude Code"],
+      wins: ["Reduced Instant Payouts integration to ~15 lines of code", "Element owns eligibility, risk, fees, and submission", "Addresses 5% of Terminal lost deals due to engineering resource constraints"],
+      quote: null,
+      visual: { bg: "linear-gradient(135deg, #1a2a0a, #2a4a1a)", title: "IP Element", detail: "15 lines to enable Instant Payouts", sub: "Eligibility + risk + fees in one Element" },
+    },
+    {
+      id: 27, name: "Connect Traits Explorer", author: "Ivan Ribeiro",
+      category: "internal-tools",
+      summary: "Built an internal Stripe Page (pages.stripe.me/trait-or-dare) to interactively explore Connect\u2019s configuration properties, which can be rough to navigate in documentation.",
+      tools: ["Claude Code", "Stripe Pages"],
+      wins: ["Live internal tool at pages.stripe.me/trait-or-dare", "Makes Connect traits navigable and explorable", "Fun UX for a traditionally dry config space"],
+      quote: null,
+      visual: { bg: "linear-gradient(135deg, #2a0a2a, #4a1a4a)", title: "Trait explorer", detail: "Connect config made navigable", sub: "Interactive traits tool on Stripe Pages" },
+    },
+    {
+      id: 28, name: "Fund Flow Agent", author: "Hernan Herrera",
+      category: "internal-tools",
+      summary: "Built an agent that runs account assessments based on acct_ids and Hubble queries, generating detailed status reports. Includes a guide for use on devbox or local machine, with plans for a simplified CC plugin version.",
+      tools: ["Claude Code", "Hubble"],
+      wins: ["Automated account health assessment from acct_ids", "Works on devbox or local machine", "Generates detailed Google Doc reports per account"],
+      quote: null,
+      visual: { bg: "linear-gradient(135deg, #1a1a10, #2a2a20)", title: "Account health", detail: "Instant account assessments", sub: "Hubble queries + status reports from acct_ids" },
+    },
+    {
+      id: 29, name: "Partner Reporting Platform Fix", author: "RK",
+      category: "internal-tools",
+      summary: "Used a Minion to write, test, and merge a PR on the Partner Reporting Platform \u2014 adding description display when selecting submission evidence categories to reduce user confusion.",
+      tools: ["Minion"],
+      wins: ["First merged PR using AI tooling", "Resolved real user confusion on PRP", "Ramped up on eng workflows (repos, devboxes, PRs) in the process"],
+      quote: "After spending time ramping up, I felt it was rather straightforward and I feel empowered to take on more fixes at Stripe.",
+      visual: { bg: "linear-gradient(135deg, #0a1a1a, #1a2a3a)", title: "Minion PR", detail: "PM merged production code", sub: "Partner Reporting Platform UX fix" },
+    },
+    {
+      id: 30, name: "Product Changelog & Slack App", author: "Miles M.",
+      category: "internal-tools",
+      summary: "Built an updated product changelog and Slack app to increase user awareness of what Stripe ships. Addresses the gap in internal visibility of shipped features.",
+      tools: ["Claude Code"],
+      wins: ["Functional Slack app for shipping awareness", "Addresses real internal communication gap", "Built during PM-aication onsite sprint"],
+      quote: null,
+      visual: { bg: "linear-gradient(135deg, #1a0a2a, #2a1a3a)", title: "Ship awareness", detail: "Slack app for what we shipped", sub: "Product changelog + Slack notifications" },
+    },
+    {
+      id: 31, name: "Enterprise Cost Management Prototype", author: "Paul Meagher",
+      category: "customer-facing",
+      summary: "Prototyped an org-level cost management experience for Enterprise users using a remote devbox with prod backend and Claude Code, making the design feel more Stripe-native than earlier v0 prototypes.",
+      tools: ["Claude Code", "Remote Devbox"],
+      wins: ["Stripe-native design vs earlier v0 prototypes", "Used prod backend for realistic prototyping", "Rapid iteration on Enterprise UX"],
+      quote: null,
+      visual: { bg: "linear-gradient(135deg, #2a2a0a, #3a3a1a)", title: "Cost management", detail: "Enterprise org-level prototype", sub: "Prod backend + Stripe-native design" },
     }
   ];
 
@@ -218,7 +326,11 @@
     { text: "Time to build an online merchant: 20 mins. Time to integrate Stripe: 10 mins. Time for Stripe to approve my merchant: 2\u20133 days.", author: "Gary Pelissier", project: "Shelf Help Books" },
     { text: "Screenshot-to-Code is super powerful. I fed the AI screenshots of our existing dashboard, and it recreated them as working React components.", author: "Denise Young", project: "Terminal Onboarding" },
     { text: "I built an agent that answers questions about my product and even writes RFPs, saving ~days of work in the future!", author: "Cip Blujdea", project: "3DS Product Suite" },
-    { text: "I built a custom Stripe app that allows users to chat with their Stripe data\u2026 effectively bypassing the need for Sigma.", author: "Daniel Loke", project: "AI-cation Multi-Project" }
+    { text: "I built a custom Stripe app that allows users to chat with their Stripe data\u2026 effectively bypassing the need for Sigma.", author: "Daniel Loke", project: "AI-cation Multi-Project" },
+    { text: "It is extremely empowering to see how fast we can land customer impact with a real problem and learn our architecture faster than any doc review.", author: "Oliver W.", project: "Trial Email Bug Fix" },
+    { text: "There is light at the end of the tunnel y\u2019all.", author: "Cecelia Shao", project: "Capital Weekly Periods" },
+    { text: "Our tooling is so impressive and enabled me to tackle a much bigger project than I initially thought possible.", author: "David Wood", project: "Org-level Blueprints" },
+    { text: "After spending time ramping up, I felt it was rather straightforward and I feel empowered to take on more fixes at Stripe.", author: "RK", project: "Partner Reporting Platform Fix" }
   ];
 
   // --- Safe text helper (avoid innerHTML XSS) ---
@@ -226,6 +338,29 @@
     var div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
+  }
+
+  // --- Carousel elements ---
+  var carouselGrid = document.getElementById("projects-grid");
+  var carouselPrev = document.getElementById("carousel-prev");
+  var carouselNext = document.getElementById("carousel-next");
+  var carouselCounter = document.getElementById("carousel-counter");
+
+  function getVisibleCount() {
+    if (!carouselGrid.firstElementChild) return 1;
+    var cardW = carouselGrid.firstElementChild.offsetWidth + 20;
+    return Math.max(1, Math.floor(carouselGrid.offsetWidth / cardW));
+  }
+
+  function updateCounter() {
+    var cards = carouselGrid.children;
+    if (!cards.length) { carouselCounter.textContent = ""; return; }
+    var cardW = cards[0].offsetWidth + 20;
+    var scrollIdx = Math.round(carouselGrid.scrollLeft / cardW);
+    var visible = getVisibleCount();
+    var first = scrollIdx + 1;
+    var last = Math.min(scrollIdx + visible, cards.length);
+    carouselCounter.textContent = first + "\u2013" + last + " of " + cards.length;
   }
 
   // --- Render projects ---
@@ -275,7 +410,23 @@
         "</div>";
     }
     grid.innerHTML = html;
+    // Reset scroll and update counter
+    grid.scrollLeft = 0;
+    updateCounter();
   }
+
+  // --- Carousel navigation ---
+  carouselPrev.addEventListener("click", function () {
+    var cardW = (carouselGrid.firstElementChild || {}).offsetWidth || 380;
+    carouselGrid.scrollBy({ left: -(cardW + 20) * getVisibleCount(), behavior: "smooth" });
+  });
+
+  carouselNext.addEventListener("click", function () {
+    var cardW = (carouselGrid.firstElementChild || {}).offsetWidth || 380;
+    carouselGrid.scrollBy({ left: (cardW + 20) * getVisibleCount(), behavior: "smooth" });
+  });
+
+  carouselGrid.addEventListener("scroll", updateCounter);
 
   // --- Render quotes ---
   function renderQuotes() {
