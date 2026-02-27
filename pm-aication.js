@@ -299,8 +299,8 @@
       var project = projects.find(function (p) { return p.id === parseInt(votedId, 10); });
       if (project) {
         var banner = document.createElement("div");
-        banner.style.cssText = "position:fixed;top:0;left:0;right:0;z-index:999;background:linear-gradient(135deg,#635bff,#30d158);color:#fff;text-align:center;padding:16px;font-weight:600;font-size:15px;";
-        banner.textContent = "Vote recorded for \"" + project.name + "\"! Thank you.";
+        banner.style.cssText = "position:fixed;top:0;left:0;right:0;z-index:999;background:#121212;color:#fff7f4;text-align:center;padding:16px;font-weight:400;font-size:13px;font-family:'SF Mono','Fira Mono','Roboto Mono',monospace;text-transform:uppercase;letter-spacing:1.5px;";
+        banner.textContent = "Vote recorded for \"" + project.name + "\" \u2014 Thank you";
         document.body.appendChild(banner);
         setTimeout(function () { banner.style.transition = "opacity .5s"; banner.style.opacity = "0"; }, 4000);
         setTimeout(function () { banner.remove(); }, 4500);
