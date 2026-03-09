@@ -1,9 +1,14 @@
 {
   "metadata": {
-    "total_submissions": 71,
-    "unique_authors": 66,
-    "date_range": "2026-02-20 to 2026-03-05",
-    "analysis_date": "2026-03-05"
+    "total_unique_pms": 96,
+    "email_submissions": 74,
+    "slack_submissions": 48,
+    "both_channels": 26,
+    "projects_catalogued": 71,
+    "unique_authors_catalogued": 66,
+    "date_range": "2026-02-20 to 2026-03-06",
+    "analysis_date": "2026-03-09",
+    "sources": ["pm-aication-notes@stripe.com", "#pm-ai-chatter"]
   },
 
   "theme_clusters": {
